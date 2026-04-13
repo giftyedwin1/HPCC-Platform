@@ -14,7 +14,6 @@
 #    limitations under the License.
 ################################################################################
 
-
 # Component: s3file
 #####################################################
 # Description:
@@ -29,8 +28,11 @@ find_package(aws-cpp-sdk-core REQUIRED)
 find_package(aws-cpp-sdk-s3 REQUIRED)
 
 set (    SRCS
+         s3api.cpp
          s3file.cpp
          s3file.hpp
+         s3utils.cpp
+         s3utils.hpp
     )
 
 include_directories (
@@ -65,7 +67,6 @@ if (USE_CPPUNIT)
 
     include_directories( ${HPCC_SOURCE_DIR}/testing/unittests )
 
-    # Set runtime path to find s3file library in filehooks directory
     set_target_properties(s3FileTests PROPERTIES
         INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/filehooks"
     )

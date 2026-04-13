@@ -1,6 +1,6 @@
 /*##############################################################################
 
-    HPCC SYSTEMS software Copyright (C) 2025 HPCC Systems®.
+    HPCC SYSTEMS software Copyright (C) 2026 HPCC Systems®.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@
 #include "s3file.hpp"
 
 /*
- * Unit tests for the new S3 file implementation
+ * Unit tests for the S3 file implementation
  *
  * These tests focus on functionality that doesn't require actual S3 connectivity:
  * - URL parsing and validation
